@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   position: fixed;
   display: flex;
@@ -229,10 +229,7 @@ body {
     backdrop-filter: blur(2px);
     box-shadow: none;
   }
- .container {
-    border-radius: 0px;
-    border: none;
-    position: fixed;
+  .container {
     width: 100%;
     height: 100%;
   }
@@ -270,7 +267,7 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  body{
+  body {
     overflow-y: scroll;
   }
   .header {
@@ -283,12 +280,9 @@ body {
     justify-content: center;
     padding: 50px 20px;
   }
-    .container {
+  .container {
     border-radius: 0px;
     border: none;
-    width: 100%;
-    min-height: 750px;
-    overflow-y:scroll;
   }
 }
 
@@ -297,14 +291,28 @@ body {
     position: relative;
     height: 200px;
   }
-
 }
-
 @media screen and (max-width: 300px) {
   .temperature h1 {
     font-size: 4em;
     font-weight: 800;
     padding: 0;
   }
- 
+}
+
+@media screen and (max-height: 550px) {
+  .container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    overflow: auto;
+  }
+  .date {
+    display: none;
+  }
+  .body {
+    margin-top: 50px;
+    overflow: scroll;
+  }
 }
