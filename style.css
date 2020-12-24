@@ -297,11 +297,7 @@ body {
     position: relative;
     height: 200px;
   }
-  .container {
-    width: 100%;
-    min-height: 750px;
-    overflow-y:scroll;
-  }
+
 }
 
 @media screen and (max-width: 300px) {
@@ -310,9 +306,5 @@ body {
     font-weight: 800;
     padding: 0;
   }
-  .container {
-    width: 100%;
-    min-height: 750px;
-    overflow-y:scroll;
-  }
+ 
 }
