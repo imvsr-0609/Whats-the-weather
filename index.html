@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"  crossorigin="anonymous"/>
+    <script defer src="app.js"></script>
+    <title>What's the Weather</title>
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="header">
+            <div class="logo-div">
+            <i class="fas fa-cloud-sun-rain fa-3x"></i>
+            <h3>WEATHER</h3>
+            </div>
+            <div class="search">
+            <form id="city-form" action="">
+                <input type="text" name="" id="city-name" placeholder="Enter city..">
+            </form>
+            <img src="https://img.icons8.com/pastel-glyph/24/ffffff/city--v2.png"/>
+            </div>
+        </div>
+
+        <div class="body">
+        
+           <div class="location">
+
+            <div class="city">
+                <div class="date">
+                   <p class="today">--- --</p>
+               </div>
+               <div class="country">
+                <h1 class="city-name">-----</h1>
+                <h4 class="country-name">--</h4>
+               </div>
+                
+                <div class="lat-long">
+                   <p class="latitude">latitude:</p>
+                   <p class="longitude">longitude:</p>
+                </div>
+                </div>
+                <div class="city-description">   
+                   <img class="weather-icon" src="./icons/unknown.png" alt="">
+                   <p class="temperature-description">---</p>
+               </div>
+           </div>
+           <div class="information">
+               <div class="temperature">
+                   <div class="temp">
+                   <h1 class="temperature-data">--</h1><span>°C</span>
+                </div>
+                   <div class="minmax">
+                   <p class="min-temp">min</p>
+                   <p class="max-temp">max</p>
+                </div>
+                   <p class="feels-like">Feels like ---</p>
+                </div>
+
+                <div class="wind">
+                  <div class="wind-icon">
+                    <i class="fas fa-wind"></i>
+                    <p>Wind</p>
+                  </div>
+                  <div class="wind-data">
+                      <p class="wind-details">-- m/s</p>
+                  </div>
+                </div>
+
+                <div class="pressure">
+                    <div class="pressure-icon">
+                        <img src="https://img.icons8.com/material/24/ffffff/dew-point.png"/>
+                        <p>Pressure</p>
+                      </div>
+                      <div class="pressure-data">
+                          <p class="pressure-details">-- pa</p>
+                      </div>
+                </div>
+
+                <div class="humidity">
+                    <div class="humidity-icon">
+                        <img src="https://img.icons8.com/material/24/ffffff/humidity.png"/>
+                        <p>Humidity</p>
+                      </div>
+                      <div class="humidity-data">
+                          <p class="humidity-details">-- %</p>
+                      </div>
+                </div>
+                   
+               </div>
+           </div>
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
