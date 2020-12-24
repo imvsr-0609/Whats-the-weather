@@ -229,7 +229,10 @@ body {
     backdrop-filter: blur(2px);
     box-shadow: none;
   }
-  .container {
+ .container {
+    border-radius: 0px;
+    border: none;
+    position: fixed;
     width: 100%;
     height: 100%;
   }
